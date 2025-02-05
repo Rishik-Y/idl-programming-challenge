@@ -1,0 +1,37 @@
+**************        To Build this Rust Program      *****************
+
+Use the cargo command:
+cargo run -- --config <config_file> --address <address> --mode <mode> --operation <operation>
+
+Example Command:
+
+    Config file: config.txt
+    Address: 0xdeadbeef
+    Mode: M (Machine mode)
+    Operation: R (Read)
+
+Use the cargo command (example):
+cargo run -- --config config.txt --address 0xdeadbeef --mode M --operation R
+
+Explanation of the Syntax
+    cargo run: Builds and runs the Rust program.
+    --: Separates cargo arguments from your program's arguments.
+    --config: Specifies the path to the PMP configuration file.
+    --address: Specifies the physical address in hexadecimal (must start with 0x).
+    --mode: Specifies the privilege mode (M, S, or U).
+    --operation: Specifies the operation (R, W, or X).
+
+Auto-Generated Help!
+
+If you're unsure about the arguments, you can always check the help message:
+cargo run -- --help
+
+Should display this:
+Usage: pmp_checker --config <CONFIG> --address <ADDRESS> --mode <MODE> --operation <OPERATION>
+
+Options:
+  -c, --config <CONFIG>      Path to PMP configuration file
+  -a, --address <ADDRESS>    Physical address in hexadecimal (0x prefix)
+  -m, --mode <MODE>          Privilege mode (M, S, U)
+  -o, --operation <OPERATION> Operation (R, W, X)
+  -h, --help                 Print help
